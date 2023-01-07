@@ -27,17 +27,19 @@
 </nav>
 <div class="header-cont">
   <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-  <button type="button" class="header-btn btn">Online-booking</button>
+  <button type="button" class="header-btn btn" data-modal-open>Online-booking</button>
 </div>
 </div>
 </header>
     <main>
         <section class="hero">
             <div class="container">
+<div class="hero-soc">
                 <ul class="hero-list list">
                     <li><a href="" rel="noreferrer noopener nofollow" class="hero-links link">Instagram</a></li>
                     <li><a href="" rel="noreferrer noopener nofollow" class="hero-links link">Youtube</a></li>
                 </ul>
+            </div>
             <div class="hero-right">
 <p class="hero-pre-title">A hair salon for men in Kyiv</p>
 <h1 class="hero-title">BarberShop</h1>
@@ -139,19 +141,73 @@
         <h2 class="barbers-title">Our barbers</h2>
             <ul class="barbers-list list">
                 <li class="barbers-items link">
+<div class="barbers-thumb">
                     <img src="./img/img_bar_1.jpg" alt="John Smith" width="370">
+                    <p class="barbers-cover-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam dignissimos totam rem eveniet odio quam, nam accusantium dolores quis reprehenderit. Voluptates aspernatur molestiae quidem veritatis modi quae nisi debitis.</p>
+                </div>
                     <h3 class="barbers-name">John Smith</h3>
                     <p class="barbers-info">Extreme Barber</p>
+                    <ul class="barbers-soc-list list">
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
+                            <svg width="20" hight="20" class="barbers-soc-icons">
+                                <use href="./img/icons.svg#icon-instagram1"></use>
+                            </svg>
+
+                        </a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg></a></li>
+                    </ul>
                 </li>
                 <li class="barbers-items link">
                     <img src="./img/img_bar_2.jpg" alt="Michele Doe" width="370">
                     <h3 class="barbers-name">Michele Doe</h3>
                     <p class="barbers-info">Extreme Barber</p>
+                    <ul class="barbers-soc-list list">
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
+                            <svg width="20" hight="20" class="barbers-soc-icons">
+                                <use href="./img/icons.svg#icon-instagram1"></use>
+                            </svg>
+
+                        </a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg></a></li>
+                    </ul
                 </li>
                 <li class="barbers-items link">
                     <img src="./img/img_bar_3.jpg" alt="Alan Black" width="370">
                     <h3 class="barbers-name">Alan Black</h3>
                     <p class="barbers-info">Extreme Barber</p>
+                    <ul class="barbers-soc-list list">
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link">
+                            <svg width="20" hight="20" class="barbers-soc-icons">
+                                <use href="./img/icons.svg#icon-instagram1"></use>
+                            </svg>
+
+                        </a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg></a></li>
+                        <li class="barbers-soc-items"><a href="#" class="barbers-soc-link link"><svg width="20" hight="20" class="barbers-soc-icons">
+                            <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg></a></li>
+                    </ul
                 </li>
             </ul>
         </div>
@@ -196,5 +252,12 @@
         </ul>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button type="button" class="modal-close" data-modal-close>X</button>
+</div>
+
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
