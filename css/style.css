@@ -50,6 +50,7 @@ cursor: pointer;
     padding: 0;
     white-space: nowrap;
     overflow: hidden;
+    opacity: 0;
 }
 /* ------------HEADER------------ */
 
@@ -625,12 +626,13 @@ color: #303030;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-padding-left: 10px;
+padding-left: 42px;
 color: #303030;
 font-size: 14px;
+transition: transform 300ms linear, border-radius 300ms linear;
 }
 .modal-input::placeholder{
-color: #FF6C00;
+color: var(--primary-header-color);
 font-weight: 700;
 }
 .modal-input-group{
@@ -658,4 +660,43 @@ font-size: 14px;
 resize: vertical;
 max-height: 250px;
 padding: 10px;
+}
+.modal-input-icon{
+    position: absolute;
+}
+.modal-input-wraper{
+    position: relative;
+}
+.modal-input-icon{
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 500ms linear;
+}
+.modal-input:hover,
+.modal-input:focus{
+    border-color: var(--accent-color);
+}
+.modal-input:hover + svg,
+.modal-input:focus + svg{
+    fill: var(--accent-color);
+}
+label.modal-politic-label{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.modal-politic-label::before{
+    content: " ";
+width: 16px;
+height: 16px;
+border: 2px solid #303030;
+border-radius: 2px;
+}
+.modal-politic-check:checked + label::before{
+    border: none;
+    background-image: url(../img/check.svg);
+background-color: #FF6C00;
+background-repeat: no-repeat;
+background-position: center;
 }

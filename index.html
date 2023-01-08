@@ -259,19 +259,38 @@
     <form>
         <div class="modal-input-group">
        <label for="name">Введіть Ваше імя</label>
+       <div class="modal-input-wraper">
         <input type="text" class="modal-input" placeholder="Введіть Ваше імя" name="name" id="name" required>
+        <svg class="modal-input-icon" weight="18" height="18">
+            <use href="./img/icons.svg#icon-person-black"></use>
+          </svg>
+        </div>
     </div>
     <div class="modal-input-group">
         <label for="email">Введіть email</label>
+        <div class="modal-input-wraper">
         <input type="email" class="modal-input" placeholder="Введіть email" name="email" id="email" required>
+        <svg class="modal-input-icon" weight="18" height="18">
+            <use href="./img/icons.svg#icon-email-black"></use>
+          </svg>
+        </div>
     </div>
     <div class="modal-input-group">
         <label for="tel">Введіть номер телефону</label>
+        <div class="modal-input-wraper">
         <input type="tel" class="modal-input" placeholder="Введіть номер телефону" value="+380" name="tel" id="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+  <svg class="modal-input-icon" weight="18" height="18">
+    <use href="./img/icons.svg#icon-phone-black"></use>
+  </svg>
+    </div>
     </div>
     <div class="modal-input-group">
         <label for="comment">Введіть коментар</label>
         <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть коментар"></textarea>
+    </div>
+    <div class="modal-input-group">
+        <input type="checkbox" name="politic" id="politic" class="modal-politic-check visually-hidden">
+        <label for="politic" class="modal-politic-label">Політика користувача</label>
     </div>
         <button type="submit">Відправити</button>
     </form>
