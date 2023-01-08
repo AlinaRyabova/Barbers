@@ -255,6 +255,26 @@
     <div class="backdrop is-hidden" data-modal>
 <div class="modal">
     <button type="button" class="modal-close" data-modal-close>X</button>
+    <p class="modal-heading">Contacts us</p>
+    <form>
+        <div class="modal-input-group">
+       <label for="name">Введіть Ваше імя</label>
+        <input type="text" class="modal-input" placeholder="Введіть Ваше імя" name="name" id="name" required>
+    </div>
+    <div class="modal-input-group">
+        <label for="email">Введіть email</label>
+        <input type="email" class="modal-input" placeholder="Введіть email" name="email" id="email" required>
+    </div>
+    <div class="modal-input-group">
+        <label for="tel">Введіть номер телефону</label>
+        <input type="tel" class="modal-input" placeholder="Введіть номер телефону" value="+380" name="tel" id="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+    </div>
+    <div class="modal-input-group">
+        <label for="comment">Введіть коментар</label>
+        <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть коментар"></textarea>
+    </div>
+        <button type="submit">Відправити</button>
+    </form>
 </div>
 
     </div>
